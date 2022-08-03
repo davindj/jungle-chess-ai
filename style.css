@@ -1,0 +1,70 @@
+*{
+    box-sizing: border-box;
+    color: white;
+}
+
+body{
+    background-color: #333;
+}
+
+.map{
+    position: relative;
+    margin:0px auto;
+    outline: 5px solid black;
+    border-radius: 2px;
+    overflow: hidden;
+    background-color: black;
+}
+
+.credit{
+    position: absolute;
+    top:45%; width:100%;
+    text-align: center;
+    font-size: 32px;
+    color:white;
+    display: inline-block;
+}
+
+.tile{
+    border: 1px solid black;
+    border-radius: 5px;
+    overflow: hidden;
+    position: absolute;
+}
+
+.trans{
+    filter: opacity(0.5);
+    
+}
+
+.tile.land{
+    background-color: green;
+}
+
+.tile.water{
+    background-color: aqua;
+    background-image: url("image/water.png");
+    background-size: 100% 100%;
+}
+
+.tile.trap{
+    background-color: burlywood;
+    background-image: url("image/trap.png");
+    background-size: 100% 100%;
+}
+
+.tile.base{
+    background-color: brown;
+    background-image: url("image/star.png");
+    background-size: 100% 100%;
+}
+
+.active{
+    border: 2px solid yellow;
+}
+
+.dot{
+    border: 2px solid orange;
+    background-color: white;
+
+}
